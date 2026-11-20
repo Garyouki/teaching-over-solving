@@ -33,9 +33,17 @@ for Positive Impact, 2026, [OpenReview](https://openreview.net/forum?id=aZ1KTkxE
 Python 3.10 or newer. No dependencies.
 
 ```bash
+python -m pip install teaching-over-solving
+```
+
+This installs the `tos-diagnostic` command (`teaching-over-solving` also works)
+and the `tos_diagnostic` Python package. To work from source:
+
+```bash
 git clone https://github.com/Garyouki/teaching-over-solving.git
 cd teaching-over-solving
-python -m pip install .
+python -m pip install -e ".[dev]"
+python -m pytest
 ```
 
 ## Reproduce the paper
