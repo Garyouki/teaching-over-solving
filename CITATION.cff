@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this diagnostic, please cite the paper below."
 title: "Teaching-over-Solving Diagnostic"
 type: software
-version: "0.1.0"
+version: "0.1.1"
 license: MIT
 repository-code: "https://github.com/Garyouki/teaching-over-solving"
 url: "https://pypi.org/project/teaching-over-solving/"

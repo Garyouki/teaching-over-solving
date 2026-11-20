@@ -112,8 +112,10 @@ def _number(value, model, col):
 # ---------------------------------------------------------------- statistics
 
 def mean(xs):
+    # math.fsum is exactly rounded, so results (and rounding at .xxx5 values)
+    # are identical on every Python version. Plain sum() changed in 3.12.
     xs = list(xs)
-    return sum(xs) / len(xs) if xs else float("nan")
+    return math.fsum(xs) / len(xs) if xs else float("nan")
 
 
 def pearson(x, y):
@@ -121,9 +123,9 @@ def pearson(x, y):
     if n < 3:
         return float("nan")
     mx, my = mean(x), mean(y)
-    sxy = sum((a - mx) * (b - my) for a, b in zip(x, y))
-    sxx = sum((a - mx) ** 2 for a in x)
-    syy = sum((b - my) ** 2 for b in y)
+    sxy = math.fsum((a - mx) * (b - my) for a, b in zip(x, y))
+    sxx = math.fsum((a - mx) ** 2 for a in x)
+    syy = math.fsum((b - my) ** 2 for b in y)
     if sxx == 0 or syy == 0:
         return float("nan")
     return sxy / math.sqrt(sxx * syy)
