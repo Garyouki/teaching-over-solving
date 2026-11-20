@@ -1,10 +1,13 @@
 name: Publish to PyPI
 
-# Runs when a version tag such as v0.1.0 is pushed.
-# Uses PyPI Trusted Publishing, so no API token is stored anywhere.
+# Runs when a version tag such as v0.1.0 is pushed, or by hand from the
+# Actions tab ("Run workflow"). Uses PyPI Trusted Publishing, so no API token
+# is stored anywhere. Publishing a version that already exists on PyPI fails,
+# so a second run of the same version cannot overwrite a release.
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -26,6 +29,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check the tag matches the package version
+        if: github.ref_type == 'tag'
         run: |
           version=$(python -c "import tomllib;print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])")
           test "v${version}" = "${GITHUB_REF_NAME}" || { echo "Tag ${GITHUB_REF_NAME} does not match version ${version}"; exit 1; }
