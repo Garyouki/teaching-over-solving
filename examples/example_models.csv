@@ -1,0 +1,3 @@
+model,problem_solving,socratic_questioning,solution_correctness,mistake_location,mistake_correction,scaffolding_win_rate,pedagogy_if_win_rate,scaffolding_hard,pedagogy_if_hard
+example-tutor-A,0.92,0.40,0.70,0.50,0.70,0.30,0.35,0.25,0.30
+example-tutor-B,0.70,0.45,0.60,0.40,0.45,0.66,0.72,0.60,0.62

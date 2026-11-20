@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this diagnostic, please cite the paper below."
+title: "Teaching-over-Solving Diagnostic"
+type: software
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/Garyouki/teaching-over-solving"
+authors:
+  - family-names: Yao
+    given-names: Junyi
+  - family-names: Zheng
+    given-names: Zihao
+  - family-names: Li
+    given-names: Baichuan
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Helpfulness: A Teaching-over-Solving Diagnostic for Measuring Educational Impact in LLM Tutors"
+  authors:
+    - family-names: Yao
+      given-names: Junyi
+    - family-names: Zheng
+      given-names: Zihao
+    - family-names: Li
+      given-names: Baichuan
+  collection-title: "5th Workshop on NLP for Positive Impact"
+  year: 2026
+  url: "https://openreview.net/forum?id=aZ1KTkxECP"

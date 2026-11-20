@@ -1,0 +1,6 @@
+{
+  "source": "Public MathTutorBench leaderboard (Macina et al., EMNLP 2025), https://eth-lre.github.io/mathtutorbench/",
+  "retrieved": "2026-11-20, via the benchmarklist.com mirror of the leaderboard (sampled 2026-05-27)",
+  "note": "Eight publicly reported models and nine task scores, as used in the Teaching-over-Solving paper. Values reproduce the paper's Table 1 composites exactly.",
+  "csv": "mathtutorbench_leaderboard.csv"
+}

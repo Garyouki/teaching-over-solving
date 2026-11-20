@@ -1,0 +1,5 @@
+{"use_case": "active_learning", "tags": ["instruction following", "ask guiding questions"]}
+{"use_case": "active_learning", "tags": ["accuracy"]}
+{"use_case": "active_learning", "tags": ["calibration to student level", "give hints"]}
+{"use_case": "adaptive_explanation", "tags": ["conciseness"]}
+{"use_case": "adaptive_explanation", "tags": ["instruction following"]}
