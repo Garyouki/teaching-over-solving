@@ -1,0 +1,25 @@
+{
+  "title": "teaching-over-solving: Teaching-over-solving diagnostic: separate how well an LLM tutor solves from how well it teaches",
+  "upload_type": "software",
+  "description": "Teaching-over-solving diagnostic: separate how well an LLM tutor solves from how well it teaches. Source code: https://github.com/Garyouki/teaching-over-solving",
+  "creators": [
+    {
+      "name": "Yao, Junyi"
+    },
+    {
+      "name": "Zheng, Zihao"
+    },
+    {
+      "name": "Li, Baichuan"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "llm-tutors",
+    "education",
+    "evaluation",
+    "pedagogy",
+    "benchmark"
+  ]
+}
