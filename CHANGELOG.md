@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Add Zenodo metadata so each release is archived with a citable DOI. No code changes.
+
 ## 0.1.1
 
 - Fix: composites now use exactly rounded summation (`math.fsum`). On Python 3.10 and 3.11, plain `sum()` put one paper value on the wrong side of a rounding boundary (LLaMA3.1-8B: Solve 0.428 and Gap +0.076 instead of 0.427 and +0.077). Results are now identical on every supported Python version.
