@@ -1,5 +1,7 @@
 # Teaching-over-Solving Diagnostic
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24430278.svg)](https://doi.org/10.5281/zenodo.24430278)
+
 A small tool for one question: **is an LLM tutor as good at teaching as it is
 at solving?**
 

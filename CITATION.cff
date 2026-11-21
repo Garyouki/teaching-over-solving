@@ -3,6 +3,7 @@ message: "If you use this diagnostic, please cite the paper below."
 title: "Teaching-over-Solving Diagnostic"
 type: software
 version: "0.1.2"
+doi: "10.5281/zenodo.24430278"
 license: MIT
 repository-code: "https://github.com/Garyouki/teaching-over-solving"
 url: "https://pypi.org/project/teaching-over-solving/"
